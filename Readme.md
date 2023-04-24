@@ -1,33 +1,33 @@
-# Github-publisher
+# np-publisher
 
-Github-publisher is simple library for pushing to github with 1 command 
+np-publisher is simple library for pushing to github with 1 command 
 ```shell
-  github-publisher https://github.com/<username>/<reponame>.git
+  np-publisher
 ```
 
-instead of 
-```shell
-  git init
-  git add .
-  git commit -m "Initial commit"
-  git branch -M main
-  git remote add origin <repolink>
-  git push -u origin main
-```
 
 # Uses
 ```shell
-  # For creating repo
-  github-publisher https://github.com/<username>/<reponame>.git
-  # For existing repos
-  github-publisher <commit>
+  # For fixes
+  np-publisher 
+  # or
+  np-publisher -fix
+
+  # For minor changes
+  np-publisher -minor
+    # For major changes
+  np-publisher -major
 ```
 
 Or even shorter
 ```shell
-  # For creating repo
-  gp https://github.com/<username>/<reponame>.git
-  # For existing repos
-  gp <commit>
-  
+  # For fixes
+  np 
+  # or
+  np -fix
+
+  # For minor changes
+  np -minor
+    # For major changes
+  np -major
 ```
