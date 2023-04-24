@@ -4,7 +4,7 @@ const fs = require("fs")
 exports.publish = async function publish(args) {
   if (args == "-v") return console.log(require("./package.json").version);
   let incrIndex = args == "-major" ? 0 : args == "-minor" ? 1 : 2
-  let jsonPath = __dirname + "/package.json"
+  let jsonPath = process.cwd() + "/package.json"
   let pjson = require(jsonPath)
   let numbers = pjson.version.split(".").map(Number)
   let oldVersion = pjson.version.split(".").map(Number).join(".")
