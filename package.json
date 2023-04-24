@@ -1,0 +1,18 @@
+{
+  "name": "np-publisher",
+  "version": "1.0.1",
+  "description": "Publish to npm with 1 line. Automaticly increase versioning",
+  "main": "index.js",
+  "bin": {
+    "npm-publisher": "bin/index.js",
+    "np": "bin/index.js"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "publish",
+    "publish-to-npm"
+  ],
+  "author": "borecjeborec1",
+  "license": "MIT"
+}
